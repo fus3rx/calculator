@@ -249,7 +249,7 @@
             this.btnSub.TabIndex = 17;
             this.btnSub.Text = "-";
             this.btnSub.UseVisualStyleBackColor = true;
-            this.btnSub.Click += new System.EventHandler(this.btnClick);
+            this.btnSub.Click += new System.EventHandler(this.oprClick);
             // 
             // btnMul
             // 
@@ -260,7 +260,7 @@
             this.btnMul.TabIndex = 18;
             this.btnMul.Text = "*";
             this.btnMul.UseVisualStyleBackColor = true;
-            this.btnMul.Click += new System.EventHandler(this.btnClick);
+            this.btnMul.Click += new System.EventHandler(this.oprClick);
             // 
             // btnDiv
             // 
@@ -271,7 +271,7 @@
             this.btnDiv.TabIndex = 19;
             this.btnDiv.Text = "/";
             this.btnDiv.UseVisualStyleBackColor = true;
-            this.btnDiv.Click += new System.EventHandler(this.btnClick);
+            this.btnDiv.Click += new System.EventHandler(this.oprClick);
             // 
             // button1
             // 
@@ -282,7 +282,7 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "=";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.btnClick);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -330,7 +330,7 @@
             this.Controls.Add(this.btnClrEvr);
             this.Controls.Add(this.label);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
 
