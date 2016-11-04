@@ -45,6 +45,7 @@ namespace Simple_Calculator
         {
             switch (operation)
             {
+
                 case "+":
                     label.Text = (value + Double.Parse(label.Text)).ToString();
                     break;
@@ -61,7 +62,11 @@ namespace Simple_Calculator
                     label.Text = (value / Double.Parse(label.Text)).ToString();
                     break;
 
+                default:
                     oprPressed = false;
+                    break;
+
+                    
             }
         }
 
@@ -92,6 +97,11 @@ namespace Simple_Calculator
                 label.Text += btn.Text;
                 label1.Text += btn.Text;
             }
+        }
+
+        private void btnPlmin_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

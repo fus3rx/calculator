@@ -227,7 +227,7 @@
             this.btnPlmin.TabIndex = 15;
             this.btnPlmin.Text = "±";
             this.btnPlmin.UseVisualStyleBackColor = true;
-            this.btnPlmin.Click += new System.EventHandler(this.btnClick);
+            this.btnPlmin.Click += new System.EventHandler(this.btnPlmin_Click);
             // 
             // btnAdd
             // 
