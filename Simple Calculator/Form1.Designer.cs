@@ -84,7 +84,7 @@
             this.btnClr.TabIndex = 2;
             this.btnClr.Text = "C";
             this.btnClr.UseVisualStyleBackColor = true;
-            this.btnClr.Click += new System.EventHandler(this.btnClick);
+            this.btnClr.Click += new System.EventHandler(this.btnClr_Click);
             // 
             // btnBspc
             // 
@@ -216,7 +216,7 @@
             this.btnDot.TabIndex = 14;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = true;
-            this.btnDot.Click += new System.EventHandler(this.btnClick);
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnPlmin
             // 
@@ -329,6 +329,9 @@
             this.Controls.Add(this.btnClr);
             this.Controls.Add(this.btnClrEvr);
             this.Controls.Add(this.label);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(222, 347);
+            this.MinimumSize = new System.Drawing.Size(222, 347);
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);

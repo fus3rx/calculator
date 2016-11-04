@@ -64,5 +64,34 @@ namespace Simple_Calculator
                     oprPressed = false;
             }
         }
+
+        private void btnClr_Click(object sender, EventArgs e)
+        {
+            label.Text = "0";
+
+        }
+
+        private void btnDot_Click(object sender, EventArgs e)
+        {
+            if ((label.Text == "0") || (oprPressed))
+            {
+               // label.Clear();
+
+            }
+            Button btn = (Button)sender;
+            oprPressed = false;
+            if (btn.Text == ".")
+            {
+                if (!label.Text.Contains("."))
+                    label.Text = label.Text + btn.Text;
+                label1.Text += btn.Text;
+
+            }
+            else
+            {
+                label.Text += btn.Text;
+                label1.Text += btn.Text;
+            }
+        }
     }
 }
